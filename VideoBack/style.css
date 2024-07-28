@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 30, 0.2), rgba(12, 3, 30, 0.2));
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+nav .logo {
+  width: 70px;
+  margin-left: 70px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+nav ul li a::after {
+  content: " ";
+  width: 0;
+  height: 2px;
+  background-color: rgb(246, 12, 148);
+
+  display: block;
+  margin: auto;
+  transition: 0.7s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content h1 {
+  font-size: 160px;
+  color: white;
+  font-weight: 600;
+  margin: 40px;
+  transition: 0.5s;
+}
+.content h1:hover {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+.content a {
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid white;
+  padding: 6px 35px;
+  border-radius: 40px;
+  background-color: white;
+  color: black;
+  margin-top: 0;
+  transition: 0.6s;
+}
+.content a:hover {
+  background-color: rgb(246, 12, 148);
+  border: 1px solid rgb(246, 12, 148);
+  color: white;
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+::selection {
+  background-color: aquamarine;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
