@@ -1,6 +1,6 @@
 # Non-Responsive-WebPages
 This repository consist of few web pages created by using only HTML and CSS. Kind of beginner friendly projects.
-- Typically there are `four` web pages given name such as, university, rocket, desert and video Background.
+- Typically there are `four` web pages given name such as, `university`, `rocket`, `desert` and `video Background`.
 - Each page has some unique feature they are nt interactive by the way.
 ## Rocket 
 - This just has the basic home page of the rocketman website.
